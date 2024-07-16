@@ -120,3 +120,14 @@ int[] mergedArray = [..numbers, ..jaggedArray[0]];
 ## Migration from .NET 6 to .NET 8
 
 [Seamless migration using .NET Upgrade Assistant to .NET 8 | CodeNx](https://medium.com/codenx/seamless-migration-using-net-upgrade-assistant-to-net-8-0c591c6602ee)
+
+## Otel Packages for Web Api
+
+```sh
+# Integration with dotnet runtime
+dotnet add package OpenTelemetry.Extensions.Hosting 
+dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
+dotnet add package OpenTelemetry.Instrumentation.AspNetCore
+dotnet add package OpenTelemetry.Instrumentation.Http
+# dotnet add package OpenTelemetry.Contrib.Extensions.AWSXRay
+```
